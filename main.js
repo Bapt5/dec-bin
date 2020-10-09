@@ -1,4 +1,11 @@
-#programme en python
+//programme en python
+
+function decimal()
+{
+    d= decimal
+    h= hexadecimal
+    b= binaire
+}
 var b=str("")
 var d=int(input("entrez un nombre decimal entier"))
 
