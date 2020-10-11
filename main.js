@@ -2,8 +2,9 @@
 
 function decimal()
 {
-    dec = document.getElementById("dec").submit();
-    document.getElementById("rep1").innerHTML = dec;
+    d= decimal
+    h= hexadecimal
+    b= binaire
 }
 
 function hexadecimal()
