@@ -1,5 +1,3 @@
-//programme en python
-
 function decimal()
 {
     var dec = document.getElementById("dec").value;
