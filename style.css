@@ -24,12 +24,15 @@ a:hover {
 }
 #repDec {
 	color : red;
+	front-style : bold;
 }
 
 #repBin {
 	color : red;
+	front-style : bold;
 }
 
 #repHex {
 	color : red;
+	front-style : bold;
 }
