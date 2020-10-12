@@ -2,7 +2,7 @@
 
 function decimal()
 {
-    var bin = 0;
+    var bin = "";
     var restDiv = 0;
     var dec = document.getElementById("dec").value;
     while (dec!=0){
@@ -10,7 +10,7 @@ function decimal()
         bin=resteDiv.toString()+bin;
         dec=Math.floor(dec/2);
     }
-    document.getElementById("repBin").innerHTML  = bin;
+    document.getElementById("repBin").innerHTML  = "Votre nombre s'écrit " + bin + " en binaire";
     
 }
 
