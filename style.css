@@ -6,8 +6,21 @@ body {
   color : white;
 }
 h1{
-  text-align: center;
-  font-size: 50px;
+	background-color : Black; 
+	color: White;
+	font-family: arial;
+	font-style :bold;
+	text-align: center;
+	font-size: 50px;
+	border: 2px solid black;
+	width : 400 px;
+	border-radius: 100px;
+	padding: 10px;
+	margin-left:150px;
+	margin-right:150px;
+}
+h1:hover {
+	background: green ;
 }
 #lien {
 	font-family: impact;
@@ -24,15 +37,15 @@ a:hover {
 }
 #repDec {
 	color : red;
-	front-style : strong;
+	font-style :bold;
 }
 
 #repBin {
 	color : red;
-	front-style : strong;
+	font-style :bold;
 }
 
 #repHex {
 	color : red;
-	front-style : strong;
+	font-style :bold;
 }
