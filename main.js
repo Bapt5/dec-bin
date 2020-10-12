@@ -2,14 +2,14 @@
 
 function decimal()
 {
-    var input = document.getElementById("dec").value;
-    alert(input);
+    var dec = document.getElementById("dec").value;
     h= hexadecimal
     b= binaire
 }
 
 function hexadecimal()
 {
+    var hex = document.getElementById("hex").value;
     d= decimal
     h= hexadecimal
     b= binaire
@@ -17,6 +17,7 @@ function hexadecimal()
 
 function binaire()
 {
+    var bin = document.getElementById("bin").value;
     d= decimal
     h= hexadecimal
     b= binaire
