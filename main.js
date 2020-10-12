@@ -3,7 +3,7 @@
 function decimal()
 {
     var dec = document.getElementById("dec").value;
-    alert (dec);
+    document.getElementById("repDec").innerHTML  = dec;
     h= hexadecimal
     b= binaire
 }
