@@ -2,32 +2,28 @@
 
 function decimal()
 {
-    var bin = "";
-    var restDiv = 0;
     var dec = document.getElementById("dec").value;
-    while (dec!=0){
-        resteDiv=dec%2;
-        bin=resteDiv.toString()+bin;
-        dec=Math.floor(dec/2);
-    }
+    var bin = dec.toString(2);;
+    var hex = dec.toString(16);;
     document.getElementById("repBin").innerHTML  = "Votre nombre s'écrit " + bin + " en binaire";
+    document.getElementById("repHex").innerHTML  = "Votre nombre s'écrit " + hex + " en héxadécimal";
     
 }
 
 function hexadecimal()
 {
     var hex = document.getElementById("hex").value;
-    alert (hex);
-    d= decimal
-    h= hexadecimal
-    b= binaire
+    var bin = hex.toString(2);;
+    var dec = hex.toString(10);;
+    document.getElementById("repBin").innerHTML  = "Votre nombre s'écrit " + bin + " en binaire";
+    document.getElementById("repDec").innerHTML  = "Votre nombre s'écrit " + dec + " en décimal";
 }
 
 function binaire()
 {
     var bin = document.getElementById("bin").value;
-    alert (bin);
-    d= decimal
-    h= hexadecimal
-    b= binaire
+    var dec = bin.toString(10);;
+    var hex = bin.toString(16);;
+    document.getElementById("repDec").innerHTML  = "Votre nombre s'écrit " + dec + " en décimal";
+    document.getElementById("repHex").innerHTML  = "Votre nombre s'écrit " + hex + " en héxadécimal";
 }
