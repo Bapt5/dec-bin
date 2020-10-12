@@ -9,15 +9,14 @@ h1{
 	background-color : Black; 
 	color: White;
 	font-family: arial;
-	font-style :bold;
 	text-align: center;
 	font-size: 50px;
 	border: 2px solid black;
 	width : 400 px;
 	border-radius: 100px;
 	padding: 10px;
-	margin-left:150px;
-	margin-right:150px;
+	margin-left:100px;
+	margin-right:100px;
 }
 h1:hover {
 	background: green ;
