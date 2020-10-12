@@ -2,7 +2,7 @@
 
 function decimal()
 {
-    document.getElementById("repDec").innerHTML = "🎉C'est les vacances🎉";
+    document.getElementById("repDec").innerHTML = "test";
     h= hexadecimal
     b= binaire
 }
