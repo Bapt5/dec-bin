@@ -2,10 +2,16 @@
 
 function decimal()
 {
+    var bin = 0;
+    var restDiv = 0;
     var dec = document.getElementById("dec").value;
-    document.getElementById("repDec").innerHTML  = dec;
-    h= hexadecimal
-    b= binaire
+    while (dec!=0){
+        resteDiv=dec%2;
+        bin=resteDiv.toString()+bin;
+        dec=Math.floor(dec/2);
+    }
+    document.getElementById("repBin").innerHTML  = bin;
+    
 }
 
 function hexadecimal()
