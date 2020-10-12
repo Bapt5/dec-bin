@@ -5,8 +5,8 @@ function decimal()
     var bin = parseInt(dec-0).toString(2);
     document.getElementById("bin").value ="";
     document.getElementById("hex").value ="";
-    document.getElementById("repBin").innerHTML  = "Votre nombre s'écrit " + bin + " en binaire";
-    document.getElementById("repHex").innerHTML  = "Votre nombre s'écrit " + hex + " en héxadécimal";
+    document.getElementById("repBin").innerHTML  = bin + " en binaire";
+    document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
     document.getElementById("repDec").innerHTML  = "";
     
 }
@@ -18,8 +18,8 @@ function hexadecimal()
     var bin = parseInt(hex,16).toString(2);
     document.getElementById("bin").value ="";
     document.getElementById("dec").value ="";
-    document.getElementById("repBin").innerHTML  = "Votre nombre s'écrit " + bin + " en binaire";
-    document.getElementById("repDec").innerHTML  = "Votre nombre s'écrit " + dec + " en décimal";
+    document.getElementById("repBin").innerHTML  = bin + " en binaire";
+    document.getElementById("repDec").innerHTML  = dec + " en décimal";
     document.getElementById("repHex").innerHTML  = "";
 }
 
@@ -30,7 +30,7 @@ function binaire()
     var hex = parseInt(bin,2).toString(16);
     document.getElementById("dec").value ="";
     document.getElementById("hex").value ="";
-    document.getElementById("repDec").innerHTML  = "Votre nombre s'écrit " + dec + " en décimal";
-    document.getElementById("repHex").innerHTML  = "Votre nombre s'écrit " + hex + " en héxadécimal";
+    document.getElementById("repDec").innerHTML  = dec + " en décimal";
+    document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
     document.getElementById("repBin").innerHTML  = "";
 }
