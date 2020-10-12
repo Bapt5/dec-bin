@@ -32,7 +32,15 @@ h1{
 a:hover {
 	background: lightgreen;
 }
-#rep {
+#repDec {
+	color : red;
+	font-style :bold;
+}
+#repBin {
+	color : red;
+	font-style :bold;
+}
+#repHex {
 	color : red;
 	font-style :bold;
 }
