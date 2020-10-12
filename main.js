@@ -2,7 +2,8 @@
 
 function decimal()
 {
-    document.getElementById("repDec").innerHTML = "test";
+    var input = document.getElementById("dec").value;
+    alert(input);
     h= hexadecimal
     b= binaire
 }
