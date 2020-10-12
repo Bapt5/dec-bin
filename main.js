@@ -1,8 +1,10 @@
 function decimal()
 {
+    var hex ="";
+    var bin = "";
     var dec = document.getElementById("dec").value;
-    var hex = dec.toString(16);
-    var bin = dec.toString(2);
+    hex = dec.toString(16);
+    bin = dec.toString(2);
     document.getElementById("bin").value ="";
     document.getElementById("hex").value ="";
     document.getElementById("repBin").innerHTML  = "Votre nombre s'écrit " + bin + " en binaire";
