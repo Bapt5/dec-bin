@@ -26,6 +26,7 @@ function decimal()
 function hexadecimal()
 {
     var hex = document.getElementById("hex").value;
+    if (hex!=""){
     var dec = parseInt(hex,16);
     var bin = parseInt(hex,16).toString(2);
     document.getElementById("bin").value ="";
@@ -39,11 +40,18 @@ function hexadecimal()
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     }
     document.getElementById("repAscii").innerHTML  = str + " en ASCII";
+    }else {
+        document.getElementById("repBin").innerHTML  = "";
+        document.getElementById("repHex").innerHTML  = "";
+        document.getElementById("repDec").innerHTML  = "";
+        document.getElementById("repAscii").innerHTML  = "";
+    }
 }
 
 function binaire()
 {
     var bin = document.getElementById("bin").value;
+    if (bin!=""){
     var dec = parseInt(bin,2);
     var hex = parseInt(bin,2).toString(16);
     document.getElementById("dec").value ="";
@@ -57,11 +65,18 @@ function binaire()
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     }
     document.getElementById("repAscii").innerHTML  = str + " en ASCII";
+    }else {
+        document.getElementById("repBin").innerHTML  = "";
+        document.getElementById("repHex").innerHTML  = "";
+        document.getElementById("repDec").innerHTML  = "";
+        document.getElementById("repAscii").innerHTML  = "";
+    }
 }
 
 function ascii()
 {
     var str=document.getElementById("ascii").value;
+    if (str!=""){
     var hex ="";
     for (var i = 0, l = str.length; i < l; i ++) {
         var code =Number(str.charCodeAt(i)).toString(16);
@@ -73,4 +88,10 @@ function ascii()
     document.getElementById("repBin").innerHTML  = bin + " en binaire";
     document.getElementById("repDec").innerHTML  = dec + " en décimal";
     document.getElementById("repAscii").innerHTML  = "";
+    }else {
+        document.getElementById("repBin").innerHTML  = "";
+        document.getElementById("repHex").innerHTML  = "";
+        document.getElementById("repDec").innerHTML  = "";
+        document.getElementById("repAscii").innerHTML  = "";
+    }
 }
