@@ -21,6 +21,12 @@ function hexadecimal()
     document.getElementById("repBin").innerHTML  = bin + " en binaire";
     document.getElementById("repDec").innerHTML  = dec + " en décimal";
     document.getElementById("repHex").innerHTML  = "";
+    var hex = hex.toString();
+    var str = '';
+    for (var i = 0; i < hex.length; i += 2) {
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    }
+    document.getElementById("repAscii").innerHTML  = str + " en ASCII";
 }
 
 function binaire()
