@@ -39,7 +39,7 @@ function ascii()
 {
     var str=document.getElementById("ascii").value;
     var hex ="";
-    for (var i=0; l=str.lenght; i<l; i+=2;){
+    for (var i=0; l=str.lenght; i<l; i++){
         var code =Number(str.charCodeAt(i)).toString(16);
         hex+=code;
     }
