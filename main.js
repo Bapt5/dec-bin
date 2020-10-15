@@ -6,6 +6,7 @@ function decimal()
         var bin = parseInt(dec-0).toString(2);
         document.getElementById("bin").value ="";
         document.getElementById("hex").value ="";
+        document.getElementById("ascii").value ="";
         document.getElementById("repBin").innerHTML  = bin + " en binaire";
         document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
         document.getElementById("repDec").innerHTML  = "";
@@ -31,6 +32,7 @@ function hexadecimal()
     var bin = parseInt(hex,16).toString(2);
     document.getElementById("bin").value ="";
     document.getElementById("dec").value ="";
+    document.getElementById("ascii").value ="";
     document.getElementById("repBin").innerHTML  = bin + " en binaire";
     document.getElementById("repDec").innerHTML  = dec + " en décimal";
     document.getElementById("repHex").innerHTML  = "";
@@ -56,6 +58,7 @@ function binaire()
     var hex = parseInt(bin,2).toString(16);
     document.getElementById("dec").value ="";
     document.getElementById("hex").value ="";
+    document.getElementById("ascii").value ="";
     document.getElementById("repDec").innerHTML  = dec + " en décimal";
     document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
     document.getElementById("repBin").innerHTML  = "";
@@ -78,6 +81,9 @@ function ascii()
     var str=document.getElementById("ascii").value;
     if (str!=""){
     var hex ="";
+    document.getElementById("dec").value ="";
+    document.getElementById("hex").value ="";
+    document.getElementById("bin").value ="";
     for (var i = 0, l = str.length; i < l; i ++) {
         var code =Number(str.charCodeAt(i)).toString(16);
         hex+=code;
