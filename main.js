@@ -34,3 +34,18 @@ function binaire()
     document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
     document.getElementById("repBin").innerHTML  = "";
 }
+
+function ascii()
+{
+    var str=document.getElementById("ascii").value;
+    var hex ="";
+    for (var i=0; l=str.lenght; i<l; i+=2){
+        var code =Number(str.charCodeAt(i)).toString(16);
+        hex+=code;
+    }
+    document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
+    var dec = parseInt(hex,16);
+    var bin = parseInt(hex,16).toString(2);
+    document.getElementById("repBin").innerHTML  = bin + " en binaire";
+    document.getElementById("repDec").innerHTML  = dec + " en décimal";
+}
