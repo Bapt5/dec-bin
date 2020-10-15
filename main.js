@@ -65,4 +65,5 @@ function ascii()
     var bin = parseInt(hex,16).toString(2);
     document.getElementById("repBin").innerHTML  = bin + " en binaire";
     document.getElementById("repDec").innerHTML  = dec + " en décimal";
+    document.getElementById("repAscii").innerHTML  = "";
 }
