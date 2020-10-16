@@ -101,3 +101,7 @@ function ascii()
         document.getElementById("repAscii").innerHTML  = "";
     }
 }
+
+var x = setInterval(function() {
+    
+})
