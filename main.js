@@ -103,5 +103,20 @@ function ascii()
 }
 
 var x = setInterval(function() {
-    
+    var dec = document.getElementById("dec").value;
+    var hex = document.getElementById("hex").value;
+    var bin = document.getElementById("bin").value;
+    var str=document.getElementById("ascii").value;
+    if (dec!=""){
+        decimal();
+    }
+    if (hex!=""){
+        hexadecimal();
+    }
+    if (bin!=""){
+        binaire();
+    }
+    if (str!=""){
+        ascii();
+    }
 })
