@@ -34,20 +34,3 @@ h1{
 a:hover {
 	background: lightgreen;
 }
-#repDec {
-	color : red;
-	font-weight: bold;
-}
-#repBin {
-	color : red;
-	font-weight: bold;
-}
-#repHex {
-	color : red;
-	font-weight: bold;
-}
-
-#repAscii {
-	color : red;
-	font-weight: bold;
-}
