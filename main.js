@@ -4,23 +4,14 @@ function decimal()
     if (dec!=""){
         var hex = parseInt(dec-0).toString(16);
         var bin = parseInt(dec-0).toString(2);
-        document.getElementById("bin").value ="";
-        document.getElementById("hex").value ="";
-        document.getElementById("ascii").value ="";
-        document.getElementById("repBin").innerHTML  = bin + " en binaire";
-        document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
-        document.getElementById("repDec").innerHTML  = "";
+        document.getElementById("bin").value  = bin;
+        document.getElementById("hex").value  = hex;
         var hex = hex.toString();
         var str = '';
         for (var i = 0; i < hex.length; i += 2) {
             str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
         }
-        document.getElementById("repAscii").innerHTML  = str + " en ASCII";
-    }else {
-        document.getElementById("repBin").innerHTML  = "";
-        document.getElementById("repHex").innerHTML  = "";
-        document.getElementById("repDec").innerHTML  = "";
-        document.getElementById("repAscii").innerHTML  = "";
+        document.getElementById("ascii").value  = str;
     }
 }
 
@@ -30,23 +21,14 @@ function hexadecimal()
     if (hex!=""){
     var dec = parseInt(hex,16);
     var bin = parseInt(hex,16).toString(2);
-    document.getElementById("bin").value ="";
-    document.getElementById("dec").value ="";
-    document.getElementById("ascii").value ="";
-    document.getElementById("repBin").innerHTML  = bin + " en binaire";
-    document.getElementById("repDec").innerHTML  = dec + " en décimal";
-    document.getElementById("repHex").innerHTML  = "";
+    document.getElementById("bin").value  = bin;
+    document.getElementById("dec").value  = dec ;
     var hex = hex.toString();
     var str = '';
     for (var i = 0; i < hex.length; i += 2) {
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     }
-    document.getElementById("repAscii").innerHTML  = str + " en ASCII";
-    }else {
-        document.getElementById("repBin").innerHTML  = "";
-        document.getElementById("repHex").innerHTML  = "";
-        document.getElementById("repDec").innerHTML  = "";
-        document.getElementById("repAscii").innerHTML  = "";
+    document.getElementById("ascii").value  = str;
     }
 }
 
@@ -56,23 +38,14 @@ function binaire()
     if (bin!=""){
     var dec = parseInt(bin,2);
     var hex = parseInt(bin,2).toString(16);
-    document.getElementById("dec").value ="";
-    document.getElementById("hex").value ="";
-    document.getElementById("ascii").value ="";
-    document.getElementById("repDec").innerHTML  = dec + " en décimal";
-    document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
-    document.getElementById("repBin").innerHTML  = "";
+    document.getElementById("dec").value  = dec;
+    document.getElementById("hex").value  = hex;
     var hex = hex.toString();
     var str = '';
     for (var i = 0; i < hex.length; i += 2) {
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     }
-    document.getElementById("repAscii").innerHTML  = str + " en ASCII";
-    }else {
-        document.getElementById("repBin").innerHTML  = "";
-        document.getElementById("repHex").innerHTML  = "";
-        document.getElementById("repDec").innerHTML  = "";
-        document.getElementById("repAscii").innerHTML  = "";
+    document.getElementById("ascii").value  = str;
     }
 }
 
@@ -81,24 +54,15 @@ function ascii()
     var str=document.getElementById("ascii").value;
     if (str!=""){
     var hex ="";
-    document.getElementById("dec").value ="";
-    document.getElementById("hex").value ="";
-    document.getElementById("bin").value ="";
     for (var i = 0, l = str.length; i < l; i ++) {
         var code =Number(str.charCodeAt(i)).toString(16);
         hex+=code;
     }
-    document.getElementById("repHex").innerHTML  = hex + " en héxadécimal";
+    document.getElementById("hex").value  = hex;
     var dec = parseInt(hex,16);
     var bin = parseInt(hex,16).toString(2);
-    document.getElementById("repBin").innerHTML  = bin + " en binaire";
-    document.getElementById("repDec").innerHTML  = dec + " en décimal";
-    document.getElementById("repAscii").innerHTML  = "";
-    }else {
-        document.getElementById("repBin").innerHTML  = "";
-        document.getElementById("repHex").innerHTML  = "";
-        document.getElementById("repDec").innerHTML  = "";
-        document.getElementById("repAscii").innerHTML  = "";
+    document.getElementById("bin").value  = bin;
+    document.getElementById("dec").value  = dec;
     }
 }
 
