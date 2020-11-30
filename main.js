@@ -27,7 +27,7 @@ function hexadecimal(e)
             var dec = parseInt(hex,16);
             var bin = parseInt(hex,16).toString(2);
             document.getElementById("bin").value  = bin;
-            document.getElementById("dec").value  = BigNumber(dec);
+            document.getElementById("dec").value  = dec;
             var hex = hex.toString();
             var str = '';
             for (var i = 0; i < hex.length; i += 2) {
@@ -46,7 +46,7 @@ function binaire(e)
         if (bin!=""){
             var dec = parseInt(bin,2);
             var hex = parseInt(bin,2).toString(16);
-            document.getElementById("dec").value  = BigNumber(dec);
+            document.getElementById("dec").value  = dec;
             document.getElementById("hex").value  = hex;
             var hex = hex.toString();
             var str = '';
@@ -73,7 +73,7 @@ function ascii(e)
             var dec = parseInt(hex,16);
             var bin = parseInt(hex,16).toString(2);
             document.getElementById("bin").value  = bin;
-            document.getElementById("dec").value  = BigNumber(dec);
+            document.getElementById("dec").value  = dec;
         }
     }
 }
