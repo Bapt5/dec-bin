@@ -38,7 +38,7 @@ function hexadecimal(e)
     }
 }
 
-function binaire()
+function binaire(e)
 {
     var touche = event.keyCode;
     if (touche==13){
@@ -58,7 +58,7 @@ function binaire()
     }
 }
 
-function ascii()
+function ascii(e)
 {
     var touche = event.keyCode;
     if (touche==13){
@@ -83,4 +83,12 @@ function erase(){
     document.getElementById("bin").value  = "";
     document.getElementById("hex").value  = "";
     document.getElementById("ascii").value  = "";
+}
+
+function touche(e)
+{
+    var touche = event.keyCode;
+    if (touche==46){
+        erase();
+    }
 }
