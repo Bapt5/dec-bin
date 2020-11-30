@@ -77,3 +77,10 @@ function ascii()
         }
     }
 }
+
+function erase(){
+    document.getElementById("dec").value  = "";
+    document.getElementById("bin").value  = "";
+    document.getElementById("hex").value  = "";
+    document.getElementById("ascii").value  = "";
+}
