@@ -85,9 +85,17 @@ function ascii(e)
                 var code =Number(str.charCodeAt(i)).toString(16);
                 hex+=code;
             }
+            var bin ="";
+            for (var i = 0, l = str.length; i < l; i ++) {
+                var code =Number(str.charCodeAt(i)).toString(2);
+                bin+=code;
+            }
+            var dec ="";
+            for (var i = 0, l = str.length; i < l; i ++) {
+                var code =Number(str.charCodeAt(i)).toString(10);
+                dec+=code;
+            }
             document.getElementById("hex").value  = hex;
-            var dec = parseInt(hex,16);
-            var bin = parseInt(hex,16).toString(2);
             document.getElementById("bin").value  = bin;
             document.getElementById("dec").value  = dec;
         }
