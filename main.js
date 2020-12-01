@@ -1,6 +1,10 @@
 function decimal(e)
 {
-    var touche = event.keyCode;
+    if (e==12){
+        var touche=13;
+    }else{
+        var touche = event.keyCode;
+    }
     if (touche==13){
         var dec = document.getElementById("dec").value;
         if (dec!=""){
@@ -20,7 +24,11 @@ function decimal(e)
 
 function hexadecimal(e)
 {
-    var touche = event.keyCode;
+    if (e==12){
+        var touche=13;
+    }else{
+        var touche = event.keyCode;
+    }
     if (touche==13){
         var hex = document.getElementById("hex").value;
         if (hex!=""){
@@ -40,7 +48,11 @@ function hexadecimal(e)
 
 function binaire(e)
 {
-    var touche = event.keyCode;
+    if (e==12){
+        var touche=13;
+    }else{
+        var touche = event.keyCode;
+    }
     if (touche==13){
         var bin = document.getElementById("bin").value;
         if (bin!=""){
@@ -60,7 +72,11 @@ function binaire(e)
 
 function ascii(e)
 {
-    var touche = event.keyCode;
+    if (e==12){
+        var touche=13;
+    }else{
+        var touche = event.keyCode;
+    }
     if (touche==13){
         var str=document.getElementById("ascii").value;
         if (str!=""){
